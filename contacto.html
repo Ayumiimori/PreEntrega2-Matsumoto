@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="<link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>Contacto</title>
+</head>
+
+<body>
+
+
+        <header>
+
+            <div class="top">
+                <section id="menu">
+                    <div class="img">
+                        <a href="#">
+                            <img width="200px" src="./img/logo.png" alt="logo">
+                        </a>
+
+                    </div>
+
+
+                    <!-- Barra de Búsqueda con BOOTSTRAP-->
+                    <div class="navbar navbar-light bg-light">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search"
+                                placeholder="Ingresar título, autor, ISBN, palabra clave" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                        </form>
+                    </div>
+
+
+                    <div class="iconos">
+                        <div class="micuenta">
+                            <a href="micuenta.html">
+                                <img width="25px" src="./img/usuario.png" alt="usuario">
+                            </a>
+                        </div>
+                        <div class="carrito">
+                            <a href="carrito.html">
+                                <img width="25px" src="./img/carrito.png" alt="carrito">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </header>
+
+
+        <!--BOOTSTRAP-->
+        <nav>
+            <div class="navbar navbar-expand-lg navbar-light bg-light">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="libros.html">Libros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="top100.html">Top 100</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <main>
+        <section class="formulario">
+            <h3>Contactanos</h3>
+            <form>
+                <fieldset>
+                    <legend> Consulta  </legend>
+                        <div>
+
+                            <select name="Motivo de consulta" id="motivo">
+                                <option value=""> Información sobre mi compra</option>
+                                <option value=""> Reportar problemas o sugerencias</option>
+                                <option value="">Compras mayoristas</option>
+                                <option value="">Cancelaciones o devoluciones</option>
+                                <option value="">Otras</option>
+
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="nombre"> Nombre y Apellido </label>
+                            <input type="text" id="nombre">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="email"> Email</label>
+                            <input placeholder="tucorreo@mail.com" type="email" id="email">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="numero"> Número de orden </label>
+                            <input type="text" id="numero">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="mensaje"> Tu mensaje </label>
+                            <input type="text" id="mensaje">
+                        </div>
+                        <br>
+                        <input type="submit" value="Enviar">
+                        <button type="reset"> Limpiar</button>
+                   
+                </fieldset>
+            </form>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
