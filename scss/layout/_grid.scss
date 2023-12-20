@@ -1,0 +1,48 @@
+#page {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "aside  main main";
+    grid-template-rows: 130px 60px 2fr;
+    grid-template-columns: 150px 2fr 1fr;
+    padding-bottom: 30px;
+}
+
+#menu {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        "logo buscador iconos";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.img {
+    grid-area: logo;
+}
+
+.navbar navbar-light bg-light {
+    grid-area: buscador;
+}
+
+.iconos {
+    grid-area: iconos;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #FF9D00;
+}
+
+aside {
+    grid-area: aside;
+}
