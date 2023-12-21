@@ -1,3 +1,5 @@
+$colorprimario: color #FF9D00;
+
 .top {
     display: flex;
     padding-top: 20px;
@@ -55,6 +57,10 @@
         box-shadow: 5px 5px 10px gray;
         display: inline-block;
         text-align: center;
+
+        &:hover {
+            width: 250px;
+        }
 }
 
 
