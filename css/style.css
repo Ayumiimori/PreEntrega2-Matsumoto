@@ -39,6 +39,15 @@ a:visited {
   align-items: center;
   justify-items: center;
 }
+#menu {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "logo buscador iconos";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+}
 
 .img {
   grid-area: logo;
@@ -111,6 +120,14 @@ nav ul li {
   color: white;
 }
 
+.top {
+  display: flex;
+  padding-top: 20px;
+  top: 0%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .top {
   display: flex;
   padding-top: 20px;
