@@ -22,6 +22,7 @@ $colorprimario: color #FF9D00;
         width: 100%;
         object-fit: cover;
         scroll-snap-align: center;
+
     }
 }
 
@@ -60,7 +61,7 @@ $colorprimario: color #FF9D00;
         }
 
         &:hover {
-            width: 250px;
+            transform: scale(1.2);
         }
 }
 

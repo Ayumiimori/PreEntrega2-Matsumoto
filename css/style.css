@@ -165,7 +165,7 @@ nav ul li {
   text-align: center;
 }
 .tarjeta:hover {
-  width: 250px;
+  transform: scale(1.2);
 }
 
 .redes {
