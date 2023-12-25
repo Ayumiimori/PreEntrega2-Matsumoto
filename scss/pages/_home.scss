@@ -82,6 +82,7 @@ $colorprimario: color #FF9D00;
     padding-top: 10px;
     text-align: center;
     padding-bottom: 30px;
+
 }
 
 .titulo {
@@ -114,4 +115,12 @@ $colorprimario: color #FF9D00;
 
 .iconos {
     display: flex;
+}
+
+.sociales{
+    padding-right: 50px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
 }
