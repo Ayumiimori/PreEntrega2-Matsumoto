@@ -21,6 +21,18 @@ a:visited {
   color: green;
 }
 
+h6 {
+  color: color #FF9D00;
+  font-size: 20px;
+  margin-left: 10%;
+}
+
+h3 {
+  color: color #FF9D00;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
 #page {
   display: grid;
   width: 100%;
@@ -65,34 +77,6 @@ aside {
   grid-area: aside;
 }
 
-@media screen and (max-width: 480px) {
-  #page {
-    grid-template-areas: "header" "nav" "aside" "main";
-    grid-template-columns: auto;
-    grid-template-rows: 200px 80px 580px 2fr;
-  }
-  nav {
-    padding-top: 20px;
-  }
-  aside {
-    padding-bottom: 100px;
-  }
-  #menu {
-    grid-template-areas: "logo" "iconos" "buscador";
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-  }
-  .iconos {
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-  .tarjeta {
-    padding-bottom: 30px;
-  }
-  .formulario {
-    margin-left: none;
-  }
-}
 nav {
   grid-area: nav;
   padding-top: 20px;
@@ -109,6 +93,14 @@ nav ul li {
   flex-wrap: wrap;
   margin: 10px;
   color: white;
+}
+
+header {
+  display: grid;
+  position: sticky;
+  width: 100%;
+  padding-top: 10px;
+  grid-area: header;
 }
 
 .top {
@@ -215,18 +207,6 @@ nav ul li {
   display: flex;
 }
 
-h6 {
-  color: color #FF9D00;
-  font-size: 20px;
-  margin-left: 10%;
-}
-
-h3 {
-  color: color #FF9D00;
-  padding-bottom: 10px;
-  font-size: 25px;
-}
-
 .formulario {
   padding-top: 90px;
   text-align: center;
@@ -251,12 +231,33 @@ h3 {
   align-items: center;
 }
 
-header {
-  display: grid;
-  position: sticky;
-  width: 100%;
-  padding-top: 10px;
-  grid-area: header;
+@media screen and (max-width: 480px) {
+  #page {
+    grid-template-areas: "header" "nav" "aside" "main";
+    grid-template-columns: auto;
+    grid-template-rows: 200px 80px 580px 2fr;
+  }
+  nav {
+    padding-top: 20px;
+  }
+  aside {
+    padding-bottom: 100px;
+  }
+  #menu {
+    grid-template-areas: "logo" "iconos" "buscador";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .iconos {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .tarjeta {
+    padding-bottom: 30px;
+  }
+  .formulario {
+    margin-left: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
