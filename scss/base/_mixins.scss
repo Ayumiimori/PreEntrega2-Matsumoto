@@ -1,6 +1,7 @@
-@mixin tablet {
-    @media(max-width:#{$tablet}) {
-        @content;
+@import "../abstracts/vars.scss";
+
+@mixin borde_especial($color) {
+        color:$color;
+        border-style: $style;
     }
-}
 
