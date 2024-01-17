@@ -1,7 +1,5 @@
-@import "../abstracts/vars.scss";
-
-@mixin borde_especial($color) {
-        color:$color;
-        border-style: $style;
+@mixin desktop {
+    @media(min-width:#{$desktop}) {
+        @content;
     }
-
+}
