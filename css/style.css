@@ -244,6 +244,33 @@ header {
   align-items: center;
 }
 
+@media screen and (max-width: 991px) {
+  #menu {
+    grid-template-areas: "logo  logo" "buscador iconos";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  .buscador {
+    align-self: center;
+    justify-content: center;
+  }
+  .iconos {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .tarjeta {
+    padding-bottom: 30px;
+  }
+  .formulario {
+    margin-left: none;
+  }
+  nav {
+    padding-top: 20px;
+  }
+  aside {
+    padding-bottom: 100px;
+  }
+}
 @media screen and (max-width: 480px) {
   #page {
     grid-template-areas: "header" "nav" "aside" "main";
@@ -260,16 +287,6 @@ header {
     grid-template-areas: "logo" "iconos" "buscador";
     grid-template-columns: auto;
     grid-template-rows: auto;
-  }
-  .iconos {
-    padding-bottom: 10px;
-    padding-top: 10px;
-  }
-  .tarjeta {
-    padding-bottom: 30px;
-  }
-  .formulario {
-    margin-left: none;
   }
 }
 
